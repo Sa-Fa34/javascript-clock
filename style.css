@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(255, 255, 255);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 245, 245);
+  height: 100vh;
+}
+
+.horloge {
+  background: rgb(0, 0, 0);
+  border: 5px, grey;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.726);
+}
+.wrapper {
+  height: 350px;
+  width: 350px;
+  position: relative;
+}
+.minute,
+.heure {
+  position: absolute;
+  background: white;
+  height: 100px;
+  width: 6px;
+  margin: auto;
+  top: -27%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  box-shadow: 0 0 10px rgba(76, 76, 177, 0.726);
+}
+
+.minute {
+  height: 125px;
+  width: 4px;
+  top: -34%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: rotate(90deg);
+  box-shadow: 0 0 10px rgba(76, 76, 177, 0.726);
+}
+.seconde {
+  position: absolute;
+  height: 90px;
+  width: 2px;
+  margin: auto;
+  top: -26%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: red;
+  transform-origin: bottom center;
+  transform: rotate(180deg);
+  box-shadow: 0 0 10px rgba(76, 76, 177, 0.726);
+}
+
+.point {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  background: black;
+  border: 2px solid #1b1b1b;
+  border-radius: 50%;
+}
+
+.japan,
+.usa,
+.france {
+  position: relative;
+  top: 0;
+  left: -200px;
+  width: 60px;
+  height: 40px;
+  background: black;
+  border: 2px solid #1b1b1b;
+  border-radius: 3px;
+  color: white;
+  box-shadow: 0 0 10px rgba(76, 76, 177, 0.829);
+  cursor: pointer;
+}
