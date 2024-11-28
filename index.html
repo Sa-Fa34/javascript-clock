@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=
-    , initial-scale=1.0"
-    />
-    <title>Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horloge</title>
   </head>
   <body>
     <div class="button">
@@ -16,14 +12,26 @@
       <button class="usa" onclick="setTimezone('usa')">USA</button>
       <button class="japan" onclick="setTimezone('japan')">Japon</button>
     </div>
+
     <div class="horloge">
       <div class="wrapper">
         <div class="heure"></div>
         <div class="minute"></div>
         <div class="seconde"></div>
         <div class="point"></div>
+
+        <!-- Liste des chiffres autour de l'horloge -->
+        <ul class="vertical">
+          <li>12</li>
+          <li>6</li>
+        </ul>
+        <ul class="horizontal">
+          <li>9</li>
+          <li>3</li>
+        </ul>
       </div>
     </div>
+
     <script src="main.js"></script>
   </body>
 </html>
